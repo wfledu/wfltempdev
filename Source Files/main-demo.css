@@ -1,0 +1,758 @@
+/**********************************************************************************
+
+	Project Name: sree - Coming Soon Template
+	Project Description: A simple and clean coming soon page made exclusively for ThemeForest market
+	File Name: main-demo.scss
+	Author: ThemesEase
+	Author URI: http://themesease.com
+	Version: 1.0.0
+
+**********************************************************************************/
+/*--------------------------------------------------------------------------*/
+/* [TABLE OF CONTENTS]
+/*
+/*	1. VARIABLES & MIXINS
+/*	2. COMMON
+/*	3. HEADER
+/*	4. BUTTONS
+/*	5. SECTIONS
+/*	6. FOOTER
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/* 1. VARIABLES & MIXINS */
+/*--------------------------------------------------------------------------*/
+html, body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #666;
+  font-size: 12px;
+  line-height: 2.25em;
+}
+
+@media (min-width: 600px) {
+  html, body {
+    font-size: calc( 12px + (14 - 12) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+p, blockquote, pre,
+address,
+dl, ol, ul,
+table {
+  margin-bottom: 2.25em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #333;
+  clear: both;
+}
+
+h1 {
+  font-size: 27.8543898685px;
+  margin-top: 1.2116582039em;
+  line-height: 1.4539898447em;
+  margin-bottom: 0.2423316408em;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: calc( 27.8543898685px + (32.4967881799 - 27.8543898685) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  h1 {
+    font-size: 32.4967881799px;
+    margin-top: 1.2116582039em;
+    line-height: 1.4539898447em;
+    margin-bottom: 0.2423316408em;
+  }
+}
+
+h2 {
+  font-size: 23.5370033519px;
+  margin-top: 1.433912359em;
+  line-height: 1.7206948308em;
+  margin-bottom: 0.3233354434em;
+}
+
+@media (min-width: 600px) {
+  h2 {
+    font-size: calc( 23.5370033519px + (27.4598372439 - 23.5370033519) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  h2 {
+    font-size: 27.4598372439px;
+    margin-top: 1.433912359em;
+    line-height: 1.7206948308em;
+    margin-bottom: 0.3181135903em;
+  }
+}
+
+h3 {
+  font-size: 19.888804939px;
+  margin-top: 1.696934537em;
+  line-height: 2.0363214444em;
+  margin-bottom: 0.390579562em;
+}
+
+@media (min-width: 600px) {
+  h3 {
+    font-size: calc( 19.888804939px + (23.2036057621 - 19.888804939) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  h3 {
+    font-size: 23.2036057621px;
+    margin-top: 1.696934537em;
+    line-height: 2.0363214444em;
+    margin-bottom: 0.3832663256em;
+  }
+}
+
+h4 {
+  font-size: 16.8060715286px;
+  margin-top: 2.0082028059em;
+  line-height: 2.4098433671em;
+  margin-bottom: 0.4733361791em;
+}
+
+@media (min-width: 600px) {
+  h4 {
+    font-size: calc( 16.8060715286px + (19.60708345 - 16.8060715286) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  h4 {
+    font-size: 19.60708345px;
+    margin-top: 2.0082028059em;
+    line-height: 2.4098433671em;
+    margin-bottom: 0.463093948em;
+  }
+}
+
+h5 {
+  font-size: 14.2011569368px;
+  margin-top: 2.376566934em;
+  line-height: 2.8518803208em;
+  margin-bottom: 0.4753133868em;
+}
+
+@media (min-width: 600px) {
+  h5 {
+    font-size: calc( 14.2011569368px + (16.5680164262 - 14.2011569368) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  h5 {
+    font-size: 16.5680164262px;
+    margin-top: 2.376566934em;
+    line-height: 2.8518803208em;
+    margin-bottom: 0.4753133868em;
+  }
+}
+
+h6 {
+  font-size: 12px;
+  margin-top: 2.8125em;
+  line-height: 3.375em;
+  margin-bottom: 0.65625em;
+}
+
+@media (min-width: 600px) {
+  h6 {
+    font-size: calc( 12px + (14 - 12) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  h6 {
+    font-size: 14px;
+    margin-top: 2.8125em;
+    line-height: 3.375em;
+    margin-bottom: 0.609375em;
+  }
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote cite {
+  display: block;
+  font-style: normal;
+}
+
+pre {
+  padding: 1.125em;
+  margin-bottom: 2.25em;
+}
+
+pre code {
+  padding: 0;
+}
+
+code {
+  font-family: "Courier New", "Courier", "Lucida Sans Typewriter", "Lucida Typewriter", "monospace";
+  padding: 0.1125em 0.3375em;
+  line-height: 0;
+}
+
+big, small, sub, sup {
+  line-height: 0;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+
+address {
+  font-style: normal;
+}
+
+dt {
+  color: #333;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 1.1em;
+}
+
+ol {
+  padding-left: 1.4em;
+}
+
+fieldset {
+  padding: 1.125em 2.25em 2.25em;
+  border-width: 1px;
+  border-style: solid;
+  max-width: 100%;
+  margin-bottom: 2.4107142857em;
+}
+
+@media (min-width: 1140px) {
+  fieldset {
+    margin-bottom: 2.6116071429em;
+  }
+}
+
+fieldset button, fieldset input[type="submit"] {
+  margin-bottom: 0;
+}
+
+legend {
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  display: block;
+  max-width: 100%;
+  padding: 0.5625em;
+  font-size: 12px;
+  margin-bottom: 1.6875em;
+}
+
+@media (min-width: 600px) {
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    font-size: calc( 12px + (14 - 12) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    font-size: 14px;
+    margin-bottom: 0.703125em;
+  }
+}
+
+input[type="submit"], button {
+  display: block;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0.5625em 2.25em;
+  margin-bottom: 1.4464285714em;
+}
+
+@media (min-width: 600px) {
+  input[type="submit"], button {
+    font-size: calc( 12px + (14 - 12) * ((100vw - 600px) / (1140 - 600)));
+  }
+}
+
+@media (min-width: 1140px) {
+  input[type="submit"], button {
+    font-size: 14px;
+    margin-bottom: 1.6875em;
+  }
+}
+
+label {
+  display: block;
+  padding-bottom: 0.28125em;
+  margin-bottom: -0.1607142857em;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 3.0535714286em;
+}
+
+@media (min-width: 1140px) {
+  table {
+    margin-bottom: 2.7321428571em;
+  }
+}
+
+th {
+  text-align: left;
+  color: #333;
+  padding: 0.28125em 1.125em;
+}
+
+@media (min-width: 1140px) {
+  th {
+    padding: 0.5625em 1.125em;
+  }
+}
+
+td {
+  padding: 1.125em;
+  padding: 0.28125em 1.125em;
+}
+
+@media (min-width: 1140px) {
+  td {
+    padding: 0.5625em 1.125em;
+  }
+}
+
+/* @include grid-overlay(red, 19); */
+/*--------------------------------------------------------------------------*/
+/* 2. COMMON */
+/*--------------------------------------------------------------------------*/
+body {
+  letter-spacing: 1px;
+}
+
+.text-muted {
+  color: #525252;
+}
+
+::-moz-selection {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+::selection {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.mbn {
+  margin-bottom: 0 !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.mb40 {
+  margin-bottom: 40px !important;
+}
+
+.mb50 {
+  margin-bottom: 50px !important;
+}
+
+.mb60 {
+  margin-bottom: 60px !important;
+}
+
+.mtn {
+  margin-top: 0 !important;
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
+.mt30 {
+  margin-top: 30px !important;
+}
+
+.mt40 {
+  margin-top: 40px !important;
+}
+
+.mt50 {
+  margin-top: 50px !important;
+}
+
+.mt60 {
+  margin-top: 60px !important;
+}
+
+.mln {
+  margin-left: 0;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.ml50 {
+  margin-left: 50px;
+}
+
+.ml60 {
+  margin-left: 60px;
+}
+
+.mrn {
+  margin-right: 0;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.mr50 {
+  margin-right: 50px;
+}
+
+.mr60 {
+  margin-right: 60px;
+}
+
+.pbn {
+  padding-bottom: 0 !important;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.pb40 {
+  padding-bottom: 40px;
+}
+
+.pb50 {
+  padding-bottom: 50px;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.pb70 {
+  padding-bottom: 70px;
+}
+
+.pb80 {
+  padding-bottom: 80px;
+}
+
+.ptn {
+  padding-top: 0 !important;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
+.pt60 {
+  padding-top: 60px;
+}
+
+.pt70 {
+  padding-top: 70px;
+}
+
+.pt80 {
+  padding-top: 80px;
+}
+
+.pt90 {
+  padding-top: 90px;
+}
+
+.pln {
+  padding-left: 0;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.pl40 {
+  padding-left: 40px;
+}
+
+.pl50 {
+  padding-left: 50px;
+}
+
+.pl60 {
+  padding-left: 60px;
+}
+
+.prn {
+  padding-right: 0;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.pr30 {
+  padding-right: 30px;
+}
+
+.pr40 {
+  padding-right: 40px;
+}
+
+.pr50 {
+  padding-right: 50px;
+}
+
+.pr60 {
+  padding-right: 60px;
+}
+
+.underline {
+  position: relative;
+  padding-bottom: 0.618em;
+  margin-bottom: 0.618em;
+}
+
+.underline:after {
+  content: "";
+  width: 2.618em;
+  height: 1px;
+  background: #525252;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.full-underline::after {
+  width: 100%;
+}
+
+.longer-underline::after {
+  width: 4.236em;
+}
+
+.text-center .underline::after {
+  width: 4%;
+  left: 48%;
+}
+
+.text-center .longer-underline::after {
+  width: 8%;
+  left: 46%;
+}
+
+/*--------------------------------------------------------------------------*/
+/* 3. HEADER */
+/*--------------------------------------------------------------------------*/
+.head {
+  padding: 6.854em 0;
+}
+
+.logo {
+  height: 2.618em;
+}
+
+/*--------------------------------------------------------------------------*/
+/* 4. BUTTONS */
+/*--------------------------------------------------------------------------*/
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #e74c3c;
+  color: #fff;
+  border: 1px solid #e74c3c;
+  outline: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #fff;
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+  background-color: #fff;
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.sr-btn {
+  display: inline-block;
+  padding: 0.618em 1em;
+  margin: 0.618em;
+  border: 1px solid #e74c3c;
+  -webkit-transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.sr-btn:hover {
+  background-color: #fff;
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.sr-btn:active {
+  background-color: #fff;
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.sr-btn .icon {
+  font-size: 1.618em;
+  margin-right: 5px;
+}
+
+/*--------------------------------------------------------------------------*/
+/* 5. SECTIONS */
+/*--------------------------------------------------------------------------*/
+.demos-section {
+  padding: 4.236em 0;
+}
+
+.demos-section .section-title h4 {
+  margin-top: 0;
+}
+
+.demos-section:nth-of-type(odd) {
+  background: #f2f2f2;
+}
+
+/*--------------------------------------------------------------------------*/
+/* 6. FOOTER */
+/*--------------------------------------------------------------------------*/
+footer {
+  background: #424242;
+  color: #fff;
+  margin-top: 0px;
+  padding: 2.618em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo-link img {
+    margin: auto;
+  }
+}
