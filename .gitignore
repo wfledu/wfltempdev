@@ -1,0 +1,13 @@
+404.html
+422.html
+500.html
+.htaccess
+.htaccess_OLD
+documentation/*
+.svn/*
+webalizer/*
+robots.txt
+cgi-bin/*
+Mailgun/*
+*.php
+*.sql
